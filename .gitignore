@@ -1,0 +1,25 @@
+# Local Claude Code activity and settings
+.claude/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Credentials - only the placeholder example is tracked
+.env
+.env.*
+*.env
+!.env.example
+
+# Research output and the fetchers' temp and quarantine files
+data/
+outputs/
+*.json
+*.jsonl
+*.log
+*.partial
+*.superseded-*
+
+.DS_Store

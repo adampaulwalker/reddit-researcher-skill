@@ -1,0 +1,4 @@
+# Both are imported directly: fetch_raw.py uses requests, fetch_reddit.py uses praw.
+# Both releases require Python 3.10 or newer.
+praw==8.0.2
+requests==2.34.2
