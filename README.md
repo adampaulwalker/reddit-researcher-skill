@@ -16,22 +16,15 @@ Since November 2025, Reddit approves new Data API access by request rather than 
 
 Approval gives you a client ID and a client secret. They belong to you alone, so keep them out of chat, email and git.
 
-Access to this repository and approval from Reddit are separate. Everything below works without credentials except an actual fetch.
+Everything below works without credentials except an actual fetch.
 
 ## Install
 
-Accept the GitHub invitation to this repository first. The repository is private, so the terminal needs to sign in to GitHub once. Install the GitHub command-line tool and follow its browser prompt, choosing HTTPS when asked:
-
-```bash
-brew install gh
-gh auth login
-```
-
-Then clone straight into your personal skills folder and build the Python environment in place:
+Clone straight into your personal skills folder and build the Python environment in place:
 
 ```bash
 mkdir -p "$HOME/.claude/skills"
-gh repo clone adampaulwalker/reddit-researcher-skill "$HOME/.claude/skills/reddit-researcher"
+git clone https://github.com/adampaulwalker/reddit-researcher-skill.git "$HOME/.claude/skills/reddit-researcher"
 cd "$HOME/.claude/skills/reddit-researcher"
 python3.12 -m venv --clear .venv
 ./.venv/bin/python -m pip install -r requirements.txt
